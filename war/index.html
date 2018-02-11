@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=encoding" />
+		<title>JWebNotifier</title>
+		<link rel="stylesheet" type="text/css" href="./styles.css" media="all">
+	</head>
+	
+	<body>
+	
+		<div id="form_container">
+		
+			<h1><a>JWebNotifier</a></h1>
+			
+			<form class="appnitro" method="post" action="./main" onsubmit="alert('Petición realizada corréctamente.\nEn cuanto la web introducida sea modificada, recibirá una notificación en su dirección de correo electrónico.');">
+						
+				<div class="form_description">
+					<h2>JWebNotifier</h2>
+					<p>Introduce una dirección web y de correo electrónico y JWebNotifier te avisará cuando la web haya actualizado su contenido, revisándola con la frecuencia indicada.</p>
+				</div>						
+				
+				<b>URL</b><br><input type="url" name="web" style="width:400px;" required><br><br>
+				
+				<b>Email</b><br><input type="email" name="email" style="width:150px;"required><br><br>
+				
+				<b>Frecuencia</b><br><span>
+					<input name="frequency" type="radio" value="10">Cada 10 minutos<br>
+					<input name="frequency" type="radio" value="60">Cada hora<br>						
+					<input name="frequency" type="radio" value="1440" checked>Cada 24 horas<br>						
+				</span><br>
+				
+				<input type="submit" value="Enviar">			
+				
+			</form>	
+			
+		</div>
+	
+	</body>
+	
+</html>
